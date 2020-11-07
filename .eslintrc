@@ -1,0 +1,27 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "extends": ["plugin:react/recommended"],
+  "plugins": [],
+  // add your custom rules here
+  "rules": {
+    "constructor-super": "warn",
+    "no-console": "warn",
+    "no-const-assign": "warn",
+    "no-debugger": "error",
+    "no-this-before-super": "warn",
+    "no-undef": "warn",
+    "no-unreachable": "warn",
+    "no-unused-vars": "warn",
+    "valid-typeof": "warn",
+    "react/display-name": "off",
+    "react/prop-types": "warn"
+  }
+}
