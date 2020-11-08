@@ -51,7 +51,7 @@ Header.Search = ({ searchTerm, setSearchTerm, ...restProps }) => {
   return (
     <Search {...restProps}>
       <SearchIcon
-        onClick={() => setSearchActive((searchActive) => !searchActive)}
+        onClick={() => setSearchActive((_searchActive) => !_searchActive)}
         data-testid="search-click"
       >
         <img src="/images/icons/search.png" alt="Search" />

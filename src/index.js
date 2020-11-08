@@ -1,13 +1,12 @@
-import React, { createContext } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import 'normalize.css';
 
+import { FirebaseContext } from 'context/firebase';
+import { firebase } from 'lib/firebase.prod';
 import App from './App';
 import { GlobalStyles } from './styles';
-import { firebase } from 'lib/firebase.prod';
-
-const FirebaseContext = createContext();
 
 ReactDOM.render(
   <FirebaseContext.Provider value={{ firebase }}>

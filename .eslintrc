@@ -1,27 +1,36 @@
 {
   "env": {
     "browser": true,
-    "node": true
+    "es2021": true
   },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src", "node_modules"]
+      }
+    }
+  },
+  "extends": ["airbnb", "prettier"],
   "parserOptions": {
-    "parser": "babel-eslint",
-    "ecmaVersion": 2018,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "extends": ["plugin:react/recommended"],
-  "plugins": [],
-  // add your custom rules here
+  "plugins": ["prettier"],
   "rules": {
-    "constructor-super": "warn",
-    "no-console": "warn",
-    "no-const-assign": "warn",
-    "no-debugger": "error",
-    "no-this-before-super": "warn",
-    "no-undef": "warn",
-    "no-unreachable": "warn",
     "no-unused-vars": "warn",
-    "valid-typeof": "warn",
-    "react/display-name": "off",
-    "react/prop-types": "off"
+    "no-console": "warn",
+    "func-names": "off",
+    "no-process-exit": "off",
+    "object-shorthand": "off",
+    "class-methods-use-this": "off",
+    "react/prop-types": "off",
+    "react/no-unescaped-entities": "off",
+    "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
+    "react/jsx-one-expression-per-line": ["off", { "allow": "single-child" }],
+    "react/jsx-props-no-spreading": "off",
+    "import/prefer-default-export": "off"
   }
 }
