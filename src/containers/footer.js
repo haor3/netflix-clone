@@ -9,32 +9,32 @@ export default function FooterContainer() {
       <Footer.Break />
       <Footer.Row>
         <Footer.Column>
-          <Footer.Link href="#">FAQ</Footer.Link>
-          <Footer.Link href="#">Investor Relations</Footer.Link>
-          <Footer.Link href="#">Ways to Watch</Footer.Link>
-          <Footer.Link href="#">Corporate Information</Footer.Link>
-          <Footer.Link href="#">Netflix Originals</Footer.Link>
+          <Footer.Link to="/faq">FAQ</Footer.Link>
+          <Footer.Link to="#">Investor Relations</Footer.Link>
+          <Footer.Link to="#">Ways to Watch</Footer.Link>
+          <Footer.Link to="#">Corporate Information</Footer.Link>
+          <Footer.Link to="#">Netflix Originals</Footer.Link>
         </Footer.Column>
 
         <Footer.Column>
-          <Footer.Link href="#">Help Centre</Footer.Link>
-          <Footer.Link href="#">Jobs</Footer.Link>
-          <Footer.Link href="#">Terms of Use</Footer.Link>
-          <Footer.Link href="#">Contact Us</Footer.Link>
+          <Footer.Link to="#">Help Centre</Footer.Link>
+          <Footer.Link to="#">Jobs</Footer.Link>
+          <Footer.Link to="#">Terms of Use</Footer.Link>
+          <Footer.Link to="#">Contact Us</Footer.Link>
         </Footer.Column>
 
         <Footer.Column>
-          <Footer.Link href="#">Account</Footer.Link>
-          <Footer.Link href="#">Redeem gift cards</Footer.Link>
-          <Footer.Link href="#">Privacy</Footer.Link>
-          <Footer.Link href="#">Speed Test</Footer.Link>
+          <Footer.Link to="#">Account</Footer.Link>
+          <Footer.Link to="#">Redeem gift cards</Footer.Link>
+          <Footer.Link to="#">Privacy</Footer.Link>
+          <Footer.Link to="#">Speed Test</Footer.Link>
         </Footer.Column>
 
         <Footer.Column>
-          <Footer.Link href="#">Media Centre</Footer.Link>
-          <Footer.Link href="#">Buy gift cards</Footer.Link>
-          <Footer.Link href="#">Cookie Preferences</Footer.Link>
-          <Footer.Link href="#">Legal Notices</Footer.Link>
+          <Footer.Link to="#">Media Centre</Footer.Link>
+          <Footer.Link to="#">Buy gift cards</Footer.Link>
+          <Footer.Link to="#">Cookie Preferences</Footer.Link>
+          <Footer.Link to="#">Legal Notices</Footer.Link>
         </Footer.Column>
       </Footer.Row>
       <Footer.Break />

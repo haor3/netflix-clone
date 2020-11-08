@@ -3,7 +3,7 @@ import _ from 'lodash';
 
 import { Jumbotron } from 'components';
 
-import { faqs, jumbos } from 'fixtures';
+import { jumbos } from 'fixtures';
 
 export default function JumbotronContainer() {
   return (

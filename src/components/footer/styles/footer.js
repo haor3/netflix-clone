@@ -1,5 +1,7 @@
 import styled from 'styled-components/macro';
 
+import { Link as LinkRouter } from 'react-router-dom';
+
 export const Container = styled.div`
   display: flex;
   padding: 70px 56px;
@@ -26,7 +28,7 @@ export const Row = styled.div`
   }
 `;
 
-export const Link = styled.a`
+export const Link = styled(LinkRouter)`
   color: #757575;
   margin-bottom: 20px;
   font-size: 13px;
