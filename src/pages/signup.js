@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 
-import * as ROUTES from 'constants/routes';
+import { AppRoutes } from 'routes';
 import { FirebaseContext } from 'context/firebase';
 import { Form } from 'components';
 import { HeaderContainer, FooterContainer } from 'containers';
@@ -30,7 +30,7 @@ export default function SignUp() {
             photoURL: Math.floor(Math.random() * 5) + 1,
           })
           .then(() => {
-            history.push(ROUTES.BROWSE);
+            history.push(AppRoutes.home);
           })
       )
       .catch((err) => {

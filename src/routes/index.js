@@ -1,1 +1,4 @@
-export { default as ProtectedRoute } from './utils/protected';
+import * as AppRoutes from './appRoutes';
+
+export { AppRoutes };
+export { default as ProtectedRoute } from './protectedRoute';

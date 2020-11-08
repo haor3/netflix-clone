@@ -1,9 +1,8 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import * as ROUTES from 'constants/routes';
-import { ProtectedRoute } from 'routes';
-import { Home, Signin, Signup } from 'pages';
+import { AppRoutes, ProtectedRoute } from 'routes';
+import { Home, Signin, Signup, Browse } from 'pages';
 import { FaqsContainer } from 'containers';
 import { AppContext } from 'context/app';
 import { useAuthListener } from 'hooks';
@@ -14,11 +13,12 @@ export default function App() {
   return (
     <AppContext.Provider>
       <Switch>
-        <Route exact path={ROUTES.SIGN_IN} component={Signin} />
-        <Route exact path={ROUTES.SIGN_UP} component={Signup} />
+        <Route exact path={AppRoutes.signin} component={Signin} />
+        <Route exact path={AppRoutes.signup} component={Signup} />
 
         <ProtectedRoute user={user}>
-          <Route exact path={ROUTES.BROWSE} component={Home} />
+          <Route exact path={AppRoutes.home} component={Home} />
+          <Route exact path={AppRoutes.browse} component={Browse} />
           <Route exact path="/faq" component={FaqsContainer} />
         </ProtectedRoute>
       </Switch>

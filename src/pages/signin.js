@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 
-import * as ROUTES from 'constants/routes';
+import { AppRoutes } from 'routes';
 import { FirebaseContext } from 'context/firebase';
 
 import { Form } from 'components';
@@ -24,7 +24,7 @@ export default function SignIn() {
       .auth()
       .signInWithEmailAndPassword(emailAddress, password)
       .then(() => {
-        history.push(ROUTES.BROWSE);
+        history.push(AppRoutes.home);
       })
       .catch((err) => {
         setEmailAddress('');
